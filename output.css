@@ -566,10 +566,6 @@ video {
   border-width: 0;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .row-span-1 {
   grid-row: span 1 / span 1;
 }
