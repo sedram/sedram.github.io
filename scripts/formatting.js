@@ -12,6 +12,14 @@ for (const main of mainSingleton) {
     // https://nearest-tailwind-color.netlify.app/ gave me dark colors which are used on https://docs.python.org/3/
   }
 }
+//navbar menu
+const buttonSingleton = document.getElementsByTagName("button");
+for (const button of buttonSingleton) {
+  button.addEventListener("click", () => {
+    document.getElementById("navbar-default").classList.toggle("hidden");
+  });
+}
+
 // TODO: FIXME: Add a toggle switch to turn informational links off (by storing the link in the id, for instance), unless they're within something whose class is downloads.
 
 //TODO:Could use https://youtu.be/WTchW0LdWL0 approach to define a master data-theme for dark mode using CSS variables
